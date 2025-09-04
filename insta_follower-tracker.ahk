@@ -67,7 +67,7 @@ Loop 50   ; Número de veces que quieres repetir todo el proceso
     Send, ^{Tab}          ; ir a la siguiente pestaña
     Sleep, 1500
 
-    Loop 9
+    Loop 10
     {
         MouseMove, 1150, 177
         Click
@@ -75,20 +75,19 @@ Loop 50   ; Número de veces que quieres repetir todo el proceso
 
         MouseMove, 698, 674
         Click
-        Sleep, 1000
+        Sleep, 2000
 
         Send, ^w
         Sleep, 1500
     }
 
-    ; BLOQUE 3: VOLVER AL PRINCIPIO
-    if (A_Index = 1) {
-        MouseMove, 1150, 1037
-    } else {
-        MouseMove, 1190, 1037  ; coordenadas para las repeticiones posteriores
-}
-Click
-Sleep, 2000
+    ; =============================== 
+    ; BLOQUE 3: VOLVER AL PRINCIPIO 
+    ; =============================== 
+     Click
+     MouseMove, 1190, 1037 
+     Click 
+     Sleep, 2000
 
 
 }
